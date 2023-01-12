@@ -1,0 +1,413 @@
+@import "nulls";
+
+body {
+	font-family: 'Inter', sans-serif;
+
+}
+//Container
+.container {
+	max-width: 1200px;
+	width: 100%;
+	// padding: 0 0px 0 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+//Header
+.header {
+	background: #0a0a0a;
+}
+//Обёртка
+.nav {}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__btn {
+	display: none;
+}
+.header__list {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+.header__item {
+	margin: 0 30px 0 0 ;
+	font-size: 24px;
+	line-height: 29px;
+	display: inline-block;
+		&:last-child {
+			margin: 0 ;
+		}
+}
+.header__link {
+	color: #717171;
+}
+.header__logo {
+	margin: 32px 0;
+	width: 39px;
+	height: 47px;
+}
+.phone-number {
+	color: #717171;
+	font-size: 24px;
+	line-height: 29px;
+	flex-basis: 0;
+	flex-grow: 1;
+	text-align: right;
+}	
+
+
+// IPHONE 14 PRO
+.main {
+
+}
+
+.iphones{
+	background: #F5F5F7;
+}
+.iphone-pro {
+	text-align: center;
+}
+.iphone-pro__title {
+	padding: 70px 0 40px 0;
+	color: #490E84;
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 77px;
+}
+.iphone-pro__image {}
+
+.iphone-pro__btn {
+	padding: 0px 0 40px ;
+	border: 1px solid #000;
+}
+.iphone-pro__link {
+	margin: 25px 0 40px;
+	padding: 22px 118px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff;
+	background: #490E84;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+
+// Что нового
+
+.new {}
+.new__title {
+	padding: 87px 0 50px;
+	text-align: center;
+	color: #717171;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+}
+.new__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.new__text {
+	margin: 0px 191px 0 0;
+	padding: 0 10px 0;
+}
+.new__item {
+	line-height: 130%;
+	margin: 0 0 30px;
+		&:last-child {
+			font-size: 20px;
+			font-weight: 700;
+			margin: 0px;
+		}
+}
+.new__promax {
+	margin: 0 100px 0 0;
+}
+
+
+//Colors
+
+.colors {}
+.colors__title {
+	text-align: center;
+	padding: 150px 0 50px;
+	color: #717171;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+}
+.colors__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.colors__item {
+	text-align: center;
+}
+.colors__phone {
+
+}
+.colors__subtitle {
+	padding: 20px 0 10px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 130%;
+}
+.colors__text {
+	line-height: 130%
+}
+
+//Order
+
+.order {}
+.order__inner {
+	background: #574B63;
+	margin: 150px  0 0;
+	display: flex;
+}
+.order__buy {
+	color: #fff;
+	width: 50%;
+	text-align: center;
+}
+.order__container {
+	max-width: 415px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+.order__title {
+	text-align: center;
+	padding: 137px 0 72px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+}
+.order__forms {
+
+}
+.order__form-username {
+	width: 100%;
+	background: #574B63;
+	border-bottom: 1px solid #fff;
+	padding: 0 0 10px;
+	margin: 0 0 30px;
+	line-height: 130%;
+		&::placeholder {
+			color: #fff;
+			opacity: 0.5;
+		}
+}
+.order__form-userphone {
+	width: 100%;
+	background: #574B63;
+	border-bottom: 1px solid #fff;
+	padding: 0 0 10px;
+	margin: 0 0 30px;
+	line-height: 130%;
+		&::placeholder {
+			color: #fff;
+			opacity: 0.5;
+		}
+}
+.order__text {
+	text-align: center;
+	line-height: 130%;
+	opacity: 0.5;
+	margin: 0 0 30px;
+}
+.order__button {
+	color: #490E84;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding: 16px 81px;
+
+	background: #FFFFFF;
+	border-radius: 30px;
+}
+.order__large-iphone {}
+
+//Footer
+
+.footer {
+	background: #0A0A0A;
+}
+.footer__inner {
+	padding: 51px 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__copy {
+	color: #717171;
+	line-height: 18px;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+.footer__logo {}
+
+
+
+
+@media (max-width: 1200px) {
+	.iphone-pro__image {
+		max-width: 100%;
+	}
+	.header__inner {
+	padding: 0 10px;
+	}
+	.footer__inner {
+		padding: 51px 15px;
+	}
+	.nav__btn {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: transparent;
+		border: none;
+		order: 1;
+		position: relative;
+	}
+	.btn-line {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		height: 2px;
+	}
+	.btn-line:nth-child(1) {
+		top: 10px;
+	}
+	.btn-line:nth-child(2) {
+		top: 25px;
+	}
+	.btn-line:nth-child(3) {
+		top: 25px;
+	}
+	.btn-line:nth-child(4) {
+		top: 40px;
+	}
+	.header__list {
+		display: none;
+	}
+	.header__phone-number {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1100px) {
+	.colors__inner {
+		flex-direction: column;
+	}
+	.colors__title {
+		padding: 100px 0 50px;
+	}
+	.colors__text {
+		margin: 0 0 30px;
+	}
+	.order__inner {
+		margin: 50px 0 0;
+		flex-direction: column-reverse;
+	}
+	.order__buy {
+		width: 100%;
+		padding: 0 0 150px;
+	}
+}
+@media (max-width: 970px) {
+	.new__promax {
+		display: none;
+	}
+	.new__item {
+		max-width: 100%;
+	}
+	.new__inner {
+		text-align: center;
+	}
+	.new__text {
+		margin: 0;
+		padding: 0 15px;
+	}
+}
+@media (max-width: 680px) {
+	.iphone-pro__title {
+		font-size: 46px;
+		line-height: 36px;
+	}
+	.iphone-pro__link {
+		padding: 16px 110px;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.new__title {
+		padding: 67px 0 50px;
+	}
+	.footer__inner {
+		flex-direction: column;
+	}
+	.footer__copy , .footer__logo {
+		padding: 0 0 25px;
+	}
+	.header__phone-number {
+		display: none;
+	}
+}
+@media (max-width: 560px) {
+	.iphone-pro__title {
+		font-size: 42px;
+	
+	}
+	.new__item:last-child {
+		font-size: 18px;
+	}
+	.colors__title , .new__title {
+		font-size: 28px;
+   	line-height: 32px;
+	}
+}
+@media (max-width: 520px) {
+	.order__title {
+		font-size: 26px;
+    	line-height: 32px;
+	}
+	.order__button {
+		padding: 12px 61px;
+	}
+	.order__buy {
+		padding: 0 25px 150px;	
+	}
+}
+@media (max-width: 420px) {
+	.new__item:last-child {
+		font-size: 16px;
+	}
+	.order__title {
+		font-size: 22px;
+    	line-height: 28px;
+	}
+	.order__button {
+		padding: 10px 51px;
+	}
+}
+@media (max-width: 375px) {
+	.iphone-pro__title {
+		font-size: 36px;
+		line-height: 32px;
+	}
+	.iphone-pro__link {
+		padding: 14px 90px;
+   	font-size: 16px;
+	}
+	.new__title {
+		    padding: 47px 0 50px;
+	}
+}
+
